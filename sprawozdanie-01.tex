@@ -7,6 +7,8 @@
 \usepackage{fancyvrb}
 \usepackage{relsize}
 \usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{booktabs}
+\usepackage{eurosym}
 
 %% tweak fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -118,30 +120,87 @@ i~stopniowym wdrażaniu wizji w~życie:
 \end{enumerate}
 
 \section{Przygotowanie do projektu}
-\subsection{Skład zespołu}
-\begin{center}
-  \begin{tabular}{ | l | r | }
-    \hline
-    \textbf{ Członek zespołu} &\textbf{ Stanowisko} \\ \hline \hline
-    Adam Ktoś & Grafik/Webdesigner \\  \hline
-    Zbysiu Innyktoś & Programista/Webdeveloper \\ \hline
-    Czesław Niktgoniezna & Administrator baz danych \\ \hline
-    John Tegonatomiastkazdyzna & Prawnik/Konsultant \\ \hline
-  \end{tabular}
-\end{center}
+
+\subsection{Skład i~możliwości zespołu}
+
+% \begin{center}
+% \begin{tabular}{llr}
+%   \toprule
+%   Członek zespołu & Stanowisko & Zdolności \\
+%   \midrule
+%   Adam Ktoś & Grafik/Webdesigner & \\
+%   Zbysiu Innyktoś & Programista/Webdeveloper & \\
+%   Czesław Niktgoniezna & Administrator baz danych & \\
+%   John Tegonatomiastkazdyzna & Prawnik/Konsultant & \\
+%   \bottomrule
+% \end{tabular}
+% \end{center}
+\begin{description}
+  \item[Artur Ktoś]~---\quad programista front\dywiz end \hfill \\
+    Doświadczony w~tworzeniu stron internetowych zgodnych z~standardami
+    \texttt{HTML5}, \texttt{CSS3} z~dodatkiem \texttt{AJAX}, głównie za pomocą
+    biblioteki \texttt{jQuery}.
+  \item[Zbysiu Inny]~---\quad programista back\dywiz end \hfill \\
+    Zna \texttt{Javę}, \texttt{Ruby} oraz web\dywiz framework \texttt{Ruby on
+    Rails}.  Dobrze zna środowisko open\dywiz source skupione wokół
+    \texttt{Ruby}. Zna frameworki do pisania testów: \texttt{RSpec}, oraz
+    bardziej przyjazny nie\dywiz programistom \texttt{Cucumber}. Brał udział
+    w~kilku projektach, potrafi prowadzić mały zespół.
+  \item[Czesław Niktgoniezna]~---\quad grafik, specjalista UX \hfill \\
+    Zna \texttt{GIMP} oraz {\tt Adobe Photoshop} i~\texttt{Adobe InDesign}.
+    Jest w~stanie przygotować grafikę do druku oraz na ekran. Razem ze Zbyśkiem
+    współtworzył inne projekty, jest w~stanie zaprojektować interfejs
+    użytkownika od strony graficznej i~użytkowej na urządzenia mobilne i~na
+    desktop.
+  \item[John Tegonatomiastkazdyzna]~---\quad admin baz danych, admin serwerów, tester \hfill \\
+    Zajmuje się administracją lokalnego serwera ze środowiskami do
+    programowania, testowania i~zewnętrznym \texttt{VPS} ze środowiskiem
+    produkcyjnym. Obsługuje bazy danych \texttt{SQL} oraz słyszał
+    o~\texttt{NoSQL}. Potrafi wykorzystać \texttt{Python} i~\texttt{Perl} do
+    zarządzania systemami \texttt{Linux}\dywiz podobnymi.
+\end{description}
+
 \subsection{Technologie}
-Jako grupa młodych informatyków, pomimo niewielkiego doświadczenia, jesteśmy doskonale zaznajomieni z najnowszymi  standardami W3C (dot. HTML, XHTML, CSS). Pośadamy również wiedzę na temat darmowego (Open Source) oprogramowania. Zredukuje to znacznie koszta naszego projektu, nie wpływając negatywnie na naszą efektowność.\\
+Zespół posługuje się głównie wolnym i~otwartym oprogramowaniem, co pozwala na
+znaczne obniżenie kosztów początkowych oraz wymusza stosowanie sprawdzonych rozwiązań:
 \begin{itemize}
-  \item Języki programowania : XHTML, CSS, PHP
-  \item oprogramowanie: GIMP, Flash for Linux, Vim
-  \item System kontroli wersji: GIT
+  \item języki programowania i~markup: \texttt{Ruby}, \texttt{Java}, \texttt{JavaScript},
+    \texttt{HTML5}, \texttt{CSS3};
+  \item frameworki:
+    \begin{itemize}
+      \item treść: \texttt{Ruby on Rails};
+      \item testowanie i~specyfikacja: \texttt{RSpec}, \texttt{JUnit}, \texttt{Cucumber};
+    \end{itemize}
+  \item narzędzia: \texttt{GIMP}, \texttt{Vim}, \texttt{Eclipse};
+  \item kontrola wersji: \texttt{Git}.
 \end{itemize}
-\subsection{Wymagania w stosunku do kontrachentów}
-Firma ``Hammer.com'' udostępni, na swój koszt, zawodowego prawnika który, w roli konsultanta, pomoże nam ustalić legalność wprowadzanych opcji w interfejsie użytkownika. Sformułuje również regulamin na potrzeby serwisu, zgodny z polskim prawem ( może być wymagana translacja).  
-\subsection{Czas wykonania projektu}
-Wstępny projekt podglądowy (interfejs graficzny) zostanie wykonany w przeciągu tygodnia. Jeżeli zostanie zaakceptowany, przez kolejne dwa tygodnie zostaną napisane wszystkie funkcje/skrypty obsługujące stronę. Przewidziany jest dodatkowy tydzień opóźnienia na ewentualne poprawki. Do tego czasu zostaną wykonane liczne testy, aby zagwarantować niezawodność strony. Dalsza współpraca ze zleceniodawcą zależy od efektu naszej pracy i jego własnej decyzji.
-\subsection{Cena}
-Cały projekt został wyceniony na 8 000 PLN. Wszelkie poprawki wynikające z nieefektywnej funkcjonalności zobowiązani jesteśmy na własy koszt. Natiomiast zmiany interfejsu graficznego po zaakceptowaniu projektu wstępnego będą dodatkowo płatne.
+
+\subsection{Wymagania w stosunku do kontrahentów}
+Firma \emph{Hammer} udostępni na swój koszt, prawnika który, w roli
+konsultanta, pomoże ustalić legalność wprowadzanych opcji w interfejsie
+użytkownika.
+
+Sformułuje również regulamin na potrzeby serwisu aukcyjnego, zgodny z prawem
+obowiązującym na docelowym rynku (mogą być wymagane usługi tłumaczy).
+
+\subsection{Czas i~koszt wykonania projektu}
+Wstępny projekt podglądowy (interfejs graficzny) zostanie wykonany w przeciągu
+dwóch tygodni. Jeżeli zostanie zaakceptowany, przez kolejne sześć tygodni
+zostanie napisane kod obsługujący stronę. Przewidziany jest dodatkowy tydzień
+opóźnienia na ewentualne poprawki. W~najlepszym przypadku projekt będzie
+prowadzony zwinnie przez \emph{test driven development}.
+
+Cały projekt został wyceniony na \EUR{20000}. Projekt prowadzony zwinnie
+powinien wykluczyć wszelkie rozbieżności pomiędzy końcowym produktem
+a~oczekiwaniami klienta. Mimo to wszelkie poprawki, wynikające z
+niezaimplementowania zadeklarowanej funkcjonalności, zespół jest zobowiązany
+wykonać na własny koszt. Zmiany interfejsu graficznego po zaakceptowaniu
+projektu wstępnego będą dodatkowo płatne po ustaleniach indywidualnych.
+
+Sumarycznie cały projekt powinien być wykonany w~przeciągu 8 do 9 tygodni, za
+łączną wartość \EUR{20000}. Dalsza współpraca ze zleceniodawcą zależy od efektów
+pracy zespołu.
+
 \section{Zespół projektowy, zadania członków zespołu}
 
 \section{Struktura podziału pracy}
