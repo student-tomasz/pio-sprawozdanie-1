@@ -267,30 +267,34 @@ rozwiązanie może konsultować z~zarządem.
 
 \subsection{Macierz RAM}
 Macierz RAM znajduje się na stronie~\pageref{tab:macierz_ram}.
-\begin{sidewaystable}
+\begin{table}[p]
   \centering
-  \begin{tabular}{c r *{4}{c}}
+  \begin{tabular}{r|*{4}{c}}
     \toprule
-    & & \multicolumn{4}{c}{\bf Zadanie} \\
-    \cmidrule{3-6}
+    \multicolumn{1}{c|}{\multirow{3}{*}{\bf Osoby}} & \multicolumn{4}{c}{\bf Zadanie} \\
+    \cmidrule{2-5}
     % begin: rząd z~tytułami zadań
-    & &
-    Szablon graficzny (\ref{sec:zadania_szablon}) &
-    Dostęp do danych (\ref{sec:zadania_dostep}) &
-    Kod serwisu (\ref{sec:zadania_kod}) &
-    Zabezpieczenia (\ref{sec:zadania_zabezpieczenia}) \\
+    &
+    Szablon graficzny &
+    Dostęp do danych &
+    Kod serwisu &
+    Zabezpieczenia \\
+    &
+    (\ref{sec:zadania_szablon}) &
+    (\ref{sec:zadania_dostep}) &
+    (\ref{sec:zadania_kod}) &
+    (\ref{sec:zadania_zabezpieczenia}) \\
     % end: rząd z~tytułami zadań
     \midrule
-    \multirow{4}{*}{\bf Osoby}
-    & Artur K. & & & \textsc{zp} & \textsc{zp} \\
-    & Zbysiu I. & & \textsc{zp} & \textsc{zg} & \textsc{zg} \\
-    & Czesław N. & \textsc{zg} & & & \\
-    & John T. & & \textsc{zg} & & \textsc{zp} \\
+    Artur K. & & & \textsc{zp} & \textsc{zp} \\
+    Zbysiu I. & & \textsc{zp} & \textsc{zg} & \textsc{zg} \\
+    Czesław N. & \textsc{zg} & & & \\
+    John T. & & \textsc{zg} & & \textsc{zp} \\
     \bottomrule
   \end{tabular}
   \label{tab:macierz_ram}
   \caption{Macierz RAM dla zespołu projektowego. Skrót \textsc{zg} oznacza zadanie główne, \textsc{zp} zadanie poboczne.}
-\end{sidewaystable}
+\end{table}
 
 \section{Struktura dokumentów}
 
