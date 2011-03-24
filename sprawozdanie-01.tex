@@ -8,6 +8,8 @@
 \usepackage{relsize}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{rotating}
 \usepackage{eurosym}
 
 %% tweak fonts
@@ -258,13 +260,37 @@ uruchamia na nim system. Nad postępami czuwa konsultant wyznaczony przez
 zarząd, prawdopodobnie pracownik zewnętrznej firmy konsultingowej. Jego
 akceptacja oznacza zakończenie prac nad systemem aukcji internetowych.
 
+\subsubsection{Sytuacje wyjątkowe}
 W~przypadku {\bf krytycznych decyzji} wpływających na cały system, problem
 przedstawiany jest liderowi zespołu {\bf Zbychowi}. Zależnie od wagi problemu,
 rozwiązanie może konsultować z~zarządem.
 
-Członkowie zespołu kontaktują się między sobą telefonicznie i za pomocą sieci
-lokalnej, natomiast lider zespołu z zarządem podobnie jak i członkowie zespołu
-z przedstawicielami działów kontaktują się przez spotkania osobiste.
+\subsection{Macierz RAM}
+Macierz RAM znajduje się na stronie~\pageref{tab:macierz_ram}.
+\begin{sidewaystable}
+  \centering
+  \begin{tabular}{c r *{4}{c}}
+    \toprule
+    & & \multicolumn{4}{c}{\bf Zadanie} \\
+    \cmidrule{3-6}
+    % begin: rząd z~tytułami zadań
+    & &
+    Szablon graficzny (\ref{sec:zadania_szablon}) &
+    Dostęp do danych (\ref{sec:zadania_dostep}) &
+    Kod serwisu (\ref{sec:zadania_kod}) &
+    Zabezpieczenia (\ref{sec:zadania_zabezpieczenia}) \\
+    % end: rząd z~tytułami zadań
+    \midrule
+    \multirow{4}{*}{\bf Osoby}
+    & Artur K. & & & \textsc{zp} & \textsc{zp} \\
+    & Zbysiu I. & & \textsc{zp} & \textsc{zg} & \textsc{zg} \\
+    & Czesław N. & \textsc{zg} & & & \\
+    & John T. & & \textsc{zg} & & \textsc{zp} \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:macierz_ram}
+  \caption{Macierz RAM dla zespołu projektowego. Skrót \textsc{zg} oznacza zadanie główne, \textsc{zp} zadanie poboczne.}
+\end{sidewaystable}
 
 \section{Struktura dokumentów}
 
